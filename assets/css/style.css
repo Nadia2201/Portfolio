@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: white
+  margin-left: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1{
+  background-color: rgb(253, 212, 236);
+  padding: 7px;
+}
+
+p {
+  margin: 0;
+}
+
+section{
+  border: rgb(94, 9, 66) solid;
+}
+.navigation{
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(94, 9, 66);
+}
+
+.hero-banner{
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  background-color: blue;
+  background-repeat: repeat;
+}
+
+#subtitle{
+  background-color: rgba(51, 243, 221, 0.738);
+  color: white;
+}
+
+.page-section{
+  display: grid;
+  grid-template-rows: 20% 75% 5%;
+  grid-template-columns: 15% 3% 82%;
+  grid-template-areas: 
+  "title-about vertical-line text-about"
+  "title-work vertical-line text-work"
+  "title-contact vertical-line text-contact";
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  row-gap: 100px
+}
+
+
+.page-section h2{
+  color:rgb(94, 9, 66);
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+#vertical-line{
+  display: inline-block;
+  border-left: 4px solid;
+  height: 100px;
+  color: rgb(173, 12, 119);
+  margin-top: 50px;
+}
+
+#photo{
+  border-radius: 50%;
+  width: 100px;
+  height: 95px;
+  border:rgb(94, 9, 66);
+  padding: 4px;
+}
+
+#text-work{
+  display: grid;
+  margin: 0px;
+  grid-template-rows: 60% 20% 20%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "1 1"
+  "2 3"
+  "4 5";
+  align-items: stretch;
+  border: 2px;
+  border-color: rgb(5, 37, 27);
+  flex-wrap: nowrap;
+}
+
+#text-work div{
+  border: rgb(94, 9, 66) solid;
+  
+
+} 
+
+#text-contact{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ul{
+  display:flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 650px;
+}
+
+li{
+  text-decoration: none;
+}
+
+#text-about{
+  margin-top: 50px;
+  margin-right: 50px;
+}
